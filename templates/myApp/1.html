@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static "css/1.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#03fcdf">
+    <center>
+        <h1><u>{{name}}'s Favourites</u></h1>
+    </center>  
+    <div>
+        <h2>
+            Player: {{player}}
+        </h2>
+        <h3><a href="https://www.cricket.com.au/players/CA:883/hashim-amla" >Click_here</a></h3>
+        <img src="{% static "images/hashim_amla.jpg" %}" alt="not available">
+
+    </div>  
+    <div>
+        <h2>Animal:{{animal}}</h2>
+        <h3><a href="https://www.britannica.com/animal/wolf">Click_here</a></h3>
+        <img src="{% static "images/wolf.webp" %}" alt="not available">
+    </div>
+    <div>
+        <h2>Subject:{{subject}}</h2>
+        <h3><a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Click_here</a></h3>
+        <img src="{% static "images/python.jpg" %}" alt="not available">
+    </div>
+</body>
+</html>
